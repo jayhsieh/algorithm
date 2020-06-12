@@ -1,0 +1,18 @@
+1. vertex: 資料節點
+2. edge: 線段(箭號)
+3. directed graph: 有方向的线段
+4. undirected graph: 无方向的线段
+5. adjacent: 相邻
+6. path: 路径
+7. length of a path: number of edges on the path
+8. simple: 简单路径，除了起点与终点之外，没有vertex被重复经过，则称这条path为simple path
+9. cycle: 循环，有一条simple path的起点和终点为同一个vertex
+10. acyclic graph(DAG): 无循环图，若graph中不存在cycle
+11. weight: 权重，可表示两个vertex的距离或者运送的成本
+12. complete graph: 每个成对的vertex都有线段edge连接
+
+Representation of Graphs
+1. adjacency matrix: 一个二维矩阵，从vertex(A)到vertex(B)有edge，则矩阵位置[A][B]之值为1，反之为0
+    若graph较为稠密(dense)适合用
+2. adjacency list: 先以一个一维阵列列出所有的vertex，在以linked list表示所有与vertex相连的vertex
+    若graph较为稀疏(sparse)适合用
